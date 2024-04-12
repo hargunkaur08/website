@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Cakes villa & Mi casa bella</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #CAB9C2;
+            padding: 10px 20px;
+        }
+
+        header h1 {
+            color: #3e2723;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: flex-start; /* Align items to the start (left) */
+        }
+
+        nav a {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: rgba(62, 39, 35, 0.8); /* Dark brown with opacity */
+            color: #ffffff; /* White text */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: rgba(62, 39, 35, 1); /* Darker brown on hover */
+        }
+
+        /* Page-specific styles */
+
+        /* Page 1 styles */
+        #page1 {
+            background-color: #C4B3DD;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .text-block {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid #3e2723;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1, p, .address {
+            color: #3e2723;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Page 2 styles */
+        #page2 {
+            background-color: #F2D7D7;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-right: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Page 3 styles */
+        #page3 {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-family: "Poppins", Arial, sans-serif;
+            background-image: url('C:/Users/hp/Desktop/web2/imges/Screenshot 2024-04-10 204211.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        #page3 .ribbon {
+            width: 100%;
+            background-color: #d8b2ff;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px; /* Adjust top margin if needed */
+        }
+
+        #page3 .ribbon .ribbon-text {
+            font-size: 36px;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        #page3 .ribbon .button-container {
+            margin-right: 20px;
+        }
+
+        #page3 .ribbon button {
+            background-color: #ff99aa;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        #page3 .ribbon button:hover {
+            background-color: #ff6699;
+        }
+
+        /* Page 4 styles */
+        #page4 {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #CAB9C2; /* Added background color */
+        }
+
+        #page4 iframe {
+            width: 80%;
+            height: 80%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Cakes villa & Mi casa bella</h1>
+        <nav>
+            <a href="#page1" class="scroll-link">HOME</a>
+            <a href="#page2" class="scroll-link">MENU</a>
+            <a href="#page3" class="scroll-link">HALL</a>
+            <a href="#page4" class="scroll-link">ABOUT US</a>
+        </nav>
+    </header>
+
+    <!-- Page 1 -->
+    <div id="page1">
+        <div class="content">
+            <div class="text-block">
+                <h1>Cakes villa & Mi casa bella</h1>
+                <p class="sub-text">bakery and restaurant</p>
+                <p class="address">Aneja Medicos, Patel Nagar, Narwana, Haryana 126116</p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="C:\Users\hp\Desktop\web2\imges\interior.jpg" alt="Interior Image" />
+        </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2" class="container">
+        <img src="C:\Users\hp\Desktop\web2\imges\Screenshot%202024-04-12%20111253.png" alt="My Image">
+        <div class="button-container">
+            <a href="C:\Users\hp\Desktop\web2\imges\menupdf.html" class="button">View More...</a>
+        </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page3">
+        <div class="ribbon" style="background-color: #d8b2ff;">
+            <div class="ribbon-text">HALL</div>
+            <div class="button-container">
+                <a href="C:\Users\hp\Desktop\web2\decor.html" target="_blank"><button>PARTY HALL</button></a>
+                <a href="C:\Users\hp\Desktop\web2\decor.html" target="_blank"><button>DECORATION</button></a>
+                <a href="C:\Users\hp\Desktop\web2\cakesv.html" target="_blank"><button>CAKES</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4 -->
+    <div id="page4">
+        <iframe src="C:\Users\hp\Desktop\web2\5.html"></iframe>
+    </div>
+
+    <script>
+        // Smooth scrolling to anchor links
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
