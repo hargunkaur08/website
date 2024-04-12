@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Webpage</title>
+    <!-- Include Poppins font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Use Poppins font for all text */
+            background-color: #CAB9C2;
+            color: #000; /* Set default text color to black */
+            display: flex;
+            justify-content: space-between; /* Space items evenly across the width */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px; /* Add padding to the body */
+            box-sizing: border-box; /* Include padding in the total width/height */
+            position: relative; /* Enable positioning context for absolute positioning */
+        }
+
+        .left-content, .right-content {
+            width: 45%; /* Take up 45% of the viewport width */
+            text-align: left;
+            padding-left: 20px; /* Add left padding for spacing */
+        }
+
+        .main-heading {
+            font-size: 60px; /* Increase font size to 60 pixels */
+            font-weight: 700; /* Use bold font weight (700) */
+            margin-bottom: 20px; /* Add bottom margin for spacing */
+        }
+
+        .contact-info {
+            font-size: 24px;
+            line-height: 1.5;
+            background-color: rgba(255, 255, 255, 0.7); /* White background color with opacity */
+            padding: 20px; /* Add padding inside the container */
+            border-radius: 8px; /* Optional: Add border radius for rounded corners */
+        }
+
+        .social-icons {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a img {
+            width: 40px; /* Set width of social icons */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="left-content">
+        <div class="main-heading">
+            We'd love to hear from you!
+        </div>
+    </div>
+
+    <div class="right-content">
+        <div class="contact-info">
+            <p><strong>CONTACT US:</strong></p>
+            <p><strong>MAIN SHOP</strong></p>
+            <p>near Aneja Medicos, Patel Nagar,</p>
+            <p>Narwana, Haryana 126116</p>
+            <p><strong>INSTAGRAM / FACEBOOK / TWITTER</strong></p>
+            <p>@Cakes villa & Mi casa bella</p>
+            <p><strong>PHONE NUMBER</strong></p>
+            <p>8307322121</p>
+        </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <!-- Instagram Icon with Link -->
+        <a href="https://www.instagram.com/cakesvillaa?igshid=NzNjdXlxbHU5aXhn" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <!-- Facebook Icon with Link -->
+        <a href="https://m.facebook.com/cakesvillaa" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
+    </div>
+</body>
+</html>
